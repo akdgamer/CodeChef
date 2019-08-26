@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main (){
+    int t;
+
+    cin>>t;
+
+    for(int i = 0; i < t; i++){
+
+        int sal;
+        cin>>sal;
+
+        double grosal;
+
+        if(sal<1500){
+            grosal = sal + (sal * 0.10) + (sal*0.90);
+        }
+        else
+            grosal = sal + (500) + (sal*0.98);
+
+        printf("%.2f\n", grosal);
+
+    }
+}
